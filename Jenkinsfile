@@ -8,12 +8,6 @@ node {
 	stage('Git') {
 		git 'https://github.com/uday7095/node-todo-frontend-master'
 	}
-	stage('Build') {
-		sh 'npm install'
-	}
-	stage('Test') {
-		sh 'npm test'
-	}
 	stage('Building image') {
         docker.withRegistry( 'https://' + registry, registryCredential ) {
 		    def buildName = registry + ":$BUILD_NUMBER"
