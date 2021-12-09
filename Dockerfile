@@ -1,7 +1,6 @@
 FROM node
 
-RUN apt-get update && apt-get upgrade -y \
-    && apt-get clean
+RUN apt-get update && apt-get upgrade -y
 
 RUN mkdir /app
 WORKDIR /app
