@@ -1,5 +1,5 @@
 node {
-    
+   tools {nodejs "nodejs"} 
 	
 
     env.AWS_ECR_LOGIN=true
