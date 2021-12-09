@@ -1,6 +1,6 @@
 node {
 	
-
+    tools {nodejs "NODEJS"}
     env.AWS_ECR_LOGIN=true
     def newApp
     def registry = '4514/newpipelineapp1'
